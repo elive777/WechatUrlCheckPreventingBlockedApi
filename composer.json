@@ -1,8 +1,8 @@
 {
-	"name" : "goodyes/Wechat_Url_Check_Status_Api",
+	"name" : "goodyes/wechat_url_check_status_and_url_preventing_blocked_Api",
 	"type" : "library",
-	"description" : "free api for Wechat Url Check Status Api blocked Resume access",
-	"time":"2018-12-30",
+	"description" : "free api for Wechat Url Check Status Api preventing blocked Resume access",
+	"time" : "2018-12-30",
 	"keywords" : [
 		"weixin",
 		"wechat",
