@@ -1,0 +1,39 @@
+## 多域名无限网址防封-添加item-不死鸟微信网址防封杀免费API接口
+不死鸟防封系统是完整的,目前已经支持 "实时监控封杀状态","被封域名网址恢复正常","提示浏览器打开","多域名自动切换","多级安全级别跳转",网址"阅读即焚",程序的功能都可以免费使用!https://www.v94.cn
+
+**本API接口对应的会员中心页面版:**
+ - `https://www.v94.cn/user/index.html#business_management/domain_url_list `
+ 
+ 
+ **说明：**
+- 本功能会自动启动监控微信封杀情况,如果你设置了多个落地页域名.某个落地页域名封,会自动切换到可用的域名.同时我们会以短信/微信/邮箱实时通知你
+
+**请求URL：** 
+- ` https://v94.cn/api/DomainShortUrl.json  `
+  
+**请求方式：**
+- POST 或者GET(如果用GET,特殊字符串需要url编码)
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+|appid |  是  |    int   |    http://www.v94.cn/user/index.html 去免费获取appid   |
+|appkey |  是  |    string   |    http://www.v94.cn/user/index.html 去免费获取appkey   |
+|type |  是  |    string   |   值:add   |
+|url |  是  |    string   |    输入http(s)://开头的网址<br> 记住,填写的网址对应的域名必须提前添加到落地页域名列表,可以到这里去操作<br>https://www.v94.cn/user/index.html#business_management/land_domain  |
+|visit_type |  否  |    string   |   值只能是:browser,frame,jump.默认  jump<br>如果你不知道它含义请到会员中心页面版查看|
+|title |  否  |    string   | 网址的title标签
+|keywords |  否  |    string   | 网址的keywords标签
+|description |  否  |    string   | 网址的description标签
+**返回示例**
+- `https://v94.cn/api/DomainShortUrl.json?appid=37****15&appkey=a50d38748960******80ae1a725b7c95&type=add&visit_type=jump&title=title1&keywords=keywords1&description=description1&url=http://www.cnblogs.com/shanyou/p/11219156.html`
+
+``` 
+{
+  "code": 1,
+  "weibo_shorturl": "http://t.cn/AiT7FLM9",
+  "message": "添加成功！"
+}
+
+```
