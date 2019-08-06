@@ -1,13 +1,17 @@
 {
 	"name" : "goodyes/Wechat_Url_Check_Status_Api",
 	"type" : "library",
-	"description" : "free api for Wechat Url Check Status Api blocked",
+	"description" : "free api for Wechat Url Check Status Api blocked Resume access",
+	"time":"2018-12-30"
 	"keywords" : [
 		"weixin",
 		"wechat",
 		"weixin url",
 		"wechat url",
-		"wechat blocked"
+		"wechat blocked",
+		"QQ",
+		"QQ url",
+		"QQ blocked"
 	],
 	"license" : "MIT",
 	"authors" : [{
@@ -21,8 +25,8 @@
 		"php" : ">=5.3.0"
 	},
 	"autoload" : {
-		"psr-4" : {
-			"goodyes" : "src"
-		}
+		"files" : [
+			"src/businiao.lib/businiao.api.php"
+		]
 	}
 }
