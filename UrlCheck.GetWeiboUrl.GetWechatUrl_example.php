@@ -1,5 +1,5 @@
 <?php
-include_once 'businiao.lib/businiao.lib.php';
+include_once 'src/businiao.lib/businiao.lib.php';
 $appid='12345678';
 $appkey='GetAppKeyAtThe:https://www.v94.cn';
 

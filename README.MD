@@ -1,3 +1,4 @@
+composer require goodyes/wechat_url_check_preventing_blocked_api ^1.1.0
 # 不死鸟微信防封杀系统免费版
 ### 我们的官方网站:http://www.v94.cn , 为了使你更快更轻松的使用本API,可以先简单浏览api各个模块.[点我查看](https://github.com/wanjunlengfeng/WechatUrlCheckStatusApi/tree/master/%E5%BE%AE%E4%BF%A1%E9%98%B2%E5%B0%81%E6%9D%80%E7%B3%BB%E7%BB%9Fapi%E6%8E%A5%E5%8F%A3%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E "点我查看")
 ### 不死鸟微信/QQ防封杀系统是适应当下微信封杀规则,开发的一整套防封杀解决方案：

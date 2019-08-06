@@ -1,5 +1,5 @@
 <?php
-include_once 'businiao.lib/businiao.lib.php';
+include_once 'src/businiao.lib/businiao.lib.php';
  /**
  * appid 和 appkey请到https://www.v94.cn/user/index.html#userinfo/userinfo 免费获取
  * 本页面api超级详细介绍页面：http://api.v94.cn/web/#/1?page_id=3

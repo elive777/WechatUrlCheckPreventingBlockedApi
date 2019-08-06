@@ -37,7 +37,7 @@
 	"minimum-stability" : "stable",
 	"autoload" : {
 		"files" : [
-			"src/businiao.lib/businiao.api.php"
+			"src/businiao.lib/businiao.lib.php"
 		]
 	}
 }
