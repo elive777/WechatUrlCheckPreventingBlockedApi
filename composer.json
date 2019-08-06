@@ -1,7 +1,7 @@
 {
 	"name" : "goodyes/wechat_url_check_status_and_url_preventing_blocked_api",
 	"type" : "library",
-	"description" : "free api for Wechat Url Check Status Api preventing blocked Resume access",
+	"description" : "QQ/微信URL链接网址防封杀，目前已经支持 实时监控封杀状态,被封域名网址恢复正常,提示浏览器打开,多域名自动切换,多级安全级别跳转,网址 阅读即焚 ,程序的功能都可以免费使用，v94.cn",
 	"time" : "2018-12-30",
 	"keywords" : [
 		"weixin",
