@@ -27,21 +27,24 @@ print_r($frequency_arr);
 
 //添加监控的网址,
 echo "<br>------------------下面是添加监控返回结果---------------------------------<br>\n";
-$add_result=$UrlCycleCheck->add('http://www.baidu.com',$frequency_arr['data'][0],0);
-print_r(json_decode($add_result,true));
+if($frequency_arr['code']==1){
+    $add_result=$UrlCycleCheck->add('http://www.baidu.com',$frequency_arr['data'][0],0);
+    print_r(json_decode($add_result,true));
+}
 
 
-//修改监控属性，请自己接触下面2段代码注释
+
+//修改监控属性，如果你演示代码，上面新添加的这里马上就会被修改，请自行注释下面代码
 echo "<br>------------------下面修改监控属性返回结果---------------------------------<br>\n";
-//$edit_result=$UrlCycleCheck->edit('http://www.baidu.com',$frequency_arr['data'][0],1);
-//print_r(json_decode($edit_result,true));
+$edit_result=$UrlCycleCheck->edit('http://www.baidu.com',$frequency_arr['data'][0],1);
+print_r(json_decode($edit_result,true));
 
 
 
-//删除监控属性，请自己接触下面2段代码注释
+//删除监控属性，如果你演示代码，上面新添加的这里马上就会被删除，请自行注释下面代码
 echo "<br>------------------下面是删除监控返回结果---------------------------------<br>\n";
-//$delete_result=$UrlCycleCheck->delete('http://www.baidu.com');
-//print_r(json_decode($delete_result,true));
+$delete_result=$UrlCycleCheck->delete('http://www.baidu.com');
+print_r(json_decode($delete_result,true));
 
 
 //获取列表

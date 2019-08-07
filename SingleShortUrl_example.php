@@ -26,17 +26,17 @@ $add_result=$SingleShortUrl->add('http://www.baidu.com','jump','网站标题','�
 print_r(json_decode($add_result,true));
 
 
-//修改属性，请自己接触下面2段代码注释
+//修改属性，如果你演示代码，上面新添加的这里马上就会被修改，请自行注释下面代码
 echo "<br>------------------下面修改监控属性返回结果---------------------------------<br>\n";
 $edit_result=$SingleShortUrl->edit('http://www.baidu.com','jump','网站标题1','网站关键词1','网站描述1');
 print_r(json_decode($edit_result,true));
 
 
 
-//删除，请自己接触下面2段代码注释
+//删除，上面新添加的这里马上就会被删除，请自行注释下面代码
 echo "<br>------------------下面是删除监控返回结果---------------------------------<br>\n";
-//$delete_result=$SingleShortUrl->delete('http://www.baidu.com');
-//print_r(json_decode($delete_result,true));
+$delete_result=$SingleShortUrl->delete('http://www.baidu.com');
+print_r(json_decode($delete_result,true));
 
 
 //获取列表

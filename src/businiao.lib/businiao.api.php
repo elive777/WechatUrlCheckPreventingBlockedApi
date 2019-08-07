@@ -26,7 +26,7 @@ class UrlCycleCheck{
     /** 添加
      * 
      * **/
-    function add($url,int $frequency,bool $is_monitor=false){
+    function add($url,int $frequency,$is_monitor=false){
         $postArr['type']='add';
         $postArr['url']=$url;
         $postArr['is_monitor']=$is_monitor;
