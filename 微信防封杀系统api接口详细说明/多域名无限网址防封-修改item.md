@@ -1,7 +1,7 @@
-## 多域名无限网址防封-修改item-不死鸟微信网址防封杀免费API接口
+## 多域名无限网址防封-添加item-不死鸟微信网址防封杀免费API接口
 不死鸟防封系统是完整的,目前已经支持 "实时监控封杀状态","被封域名网址恢复正常","提示浏览器打开","多域名自动切换","多级安全级别跳转",网址"阅读即焚",程序的功能都可以免费使用!https://www.v94.cn
 
-**本API接口对应的会员中心页面版(编辑):**
+**本API接口对应的会员中心页面版:**
  - `https://www.v94.cn/user/index.html#business_management/domain_url_list `
  
  
@@ -22,7 +22,7 @@
 |appkey |  是  |    string   |    http://www.v94.cn/user/index.html 去免费获取appkey   |
 |type |  是  |    string   |   值:edit   |
 |url |  是  |    string   |    输入http(s)://开头的网址<br> 记住,填写的网址对应的域名必须提前添加到落地页域名列表,可以到这里去操作<br>https://www.v94.cn/user/index.html#business_management/land_domain  |
-|visit_type |  否  |    string   |   值只能是:browser,frame,jump.默认  jump<br>如果你不知道它含义请到会员中心页面版查看|
+|visit_type |  否  |    string   |   值只能是:browser,frame,jump.默认不做修改<br>如果你不知道它含义请到会员中心页面版查看|
 |new_land_domain_url|否|string|修改域名,默认不做修改.<br>http(s)://开头的域名,如https://xxxxx.com<br>记住,修改的新域名必须提前添加到落地页域名列表,可以到这里去操作<br>https://www.v94.cn/user/index.html#business_management/land_domain
 |title |  否  |    string   | 网址的title标签,默认不做修改
 |keywords |  否  |    string   | 网址的keywords标签,默认不做修改
@@ -33,7 +33,7 @@
 ``` 
 {
   "code": 1,
-  "message": "添加成功！"
+  "message": "修改成功！"
 }
 
 ```
