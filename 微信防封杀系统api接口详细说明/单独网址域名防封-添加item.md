@@ -28,7 +28,7 @@
 |description |  否  |    string   | 网址的description标签
 
 **返回示例**
-- `https://v94.cn/api/SingleShortUrl.json?appid=37****15&appkey=a50d38748960******80ae1a725b7c95&api/SingleShortUrl.json?type=add&url=https://q.cnblogs.com/&visit_type=jump&title=title1&keywords=keywords2&description=description3`
+- `https://v94.cn/api/SingleShortUrl.json?appid=37****15&appkey=a50d38748960******80ae1a725b7c95&type=add&url=https://q.cnblogs.com/&visit_type=jump&title=title1&keywords=keywords2&description=description3`
 
 
  ``` 
