@@ -37,3 +37,5 @@
 }
 
 ```
+
+**[查看所有CODE值含义](https://github.com/wanjunlengfeng/WechatUrlCheckPreventingBlockedApi/blob/master/微信防封杀系统api接口详细说明/CODE代码汇总.md "查看所有CODE值含义")**
