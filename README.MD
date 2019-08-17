@@ -24,18 +24,19 @@ composer require goodyes/wechat_url_check_preventing_blocked_api ^1.1.0
 	3.获取支持检测频率（本api案例已经支持演示）
 	4.删除url（本api案例已经支持演示）
 
-#### 防止封杀系统
+### 防止封杀系统
 
-######  落地页打开方式：
+#### 三、落地页打开方式：
 
 	(1)在微信里面直接打开(默认)
 	(2)被封链接恢复正常。如果你的链接已经被微信封杀，可以使用这个方法
 	(3)提示浏览器打开。当然非微信浏览器则直接打开
-	(4)链接阅读即焚。需要你的系统和我们的防封杀系统能相互传递数据。
+	(4)如果是android微信，会自动打开系统默认浏览器(如apk安装包下载)
+	(5)链接阅读即焚。需要你的系统和我们的防封杀系统能相互传递数据。
 
 ###### 目前不死鸟防封杀系统包含 单个网址URL网址链接防止封杀系统 和 多域名无限URL网址连接防止封杀系统
 
-#### 三、微信单个网址URL网址链接（任意网址添加）防止封杀系统
+#### 四、微信单个网址URL网址链接（任意网址添加）防止封杀系统
 
 ###### 当你添加后，会自动启动监控微信封杀情况.如果某个网址被封,我们会以短信/微信/邮箱实时通知你.如果需要自动切换到可用网页,请使用”多域名无限网址”功能的防封列表 	 当你添加后，会自动启动监控微信封杀情况.如果某个网址被封,我们会以短信/微信/邮箱实时通知你.如果需要自动切换到可用网页,请使用”多域名无限网址”功能的防封列表
 
@@ -44,7 +45,7 @@ composer require goodyes/wechat_url_check_preventing_blocked_api ^1.1.0
  	3.编辑链接属性（本api案例已经支持演示）
 	4.删除链接（本api案例已经支持演示）
 
-#### 四、微信多域名无限URL网址连接（添加前需要指定落地页域名）防止封杀系统
+#### 五、微信多域名无限URL网址连接（添加前需要指定落地页域名）防止封杀系统
 
 ##### 当你添加后，会自动启动监控微信封杀情况,如果你设置了多个落地页域名.某个落地页域名封,会自动切换到可用的域名.同时我们会以短信/微信/邮箱实时通知你。本功能能使你的业务0损失。
 
@@ -53,10 +54,10 @@ composer require goodyes/wechat_url_check_preventing_blocked_api ^1.1.0
  	 3.编辑链接属性（本api案例已经支持演示）
  	 4删除链接（本api案例已经支持演示）
 
-#### 五、自定义短域名
+#### 六、自定义短域名
 
 	如果你的业务非常重要，使用自己的短域名。可以查看https://www.v94.cn/user/index.html#business_management/user_short_domain_list
-#### 六、还有更多功能
+#### 七、还有更多功能
 
 	请到 https://www.v94.cn 查看
 
@@ -69,6 +70,7 @@ UrlCheck.GetWeiboUrl.GetWechatUrl_example.php
 
 ```php
 <?php
+//include 'vendor/autoload.php';
 include_once 'businiao.lib/businiao.lib.php';
 $appid='12345678';
 $appkey='GetAppKeyAtThe:https://www.v94.cn';
@@ -106,6 +108,7 @@ UrlCycleCheck_example.php
 
 ```php
 <?php
+//include 'vendor/autoload.php';
 include_once 'businiao.lib/businiao.lib.php';
  /**
  * appid 和 appkey请到https://www.v94.cn/user/index.html#userinfo/userinfo 免费获取
@@ -164,6 +167,7 @@ SingleShortUrl_example.php
 
 ```php
 <?php
+//include 'vendor/autoload.php';
 include_once 'businiao.lib/businiao.lib.php';
 /**
  * appid 和 appkey请到https://www.v94.cn/user/index.html#userinfo/userinfo 免费获取
@@ -217,6 +221,7 @@ DomainShortUrl_example.php
 
 ```php
 <?php
+//include 'vendor/autoload.php';
 include_once 'businiao.lib/businiao.lib.php';
 /**
  * appid 和 appkey请到https://www.v94.cn/user/index.html#userinfo/userinfo 免费获取
