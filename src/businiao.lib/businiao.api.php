@@ -195,6 +195,11 @@ class DomainShortUrl{
         $postArr['rows']=$rows;
         return $this->curl($postArr);
     }
+    function HighFrequencyCheck($url){
+        $postArr['type']='HighFrequencyCheck';
+        $postArr['url']=$url;
+        return $this->curl($postArr);
+    }
     function help(){
         $postArr['type']='help';
         return $this->curl($postArr);

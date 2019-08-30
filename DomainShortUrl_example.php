@@ -46,4 +46,9 @@ echo "<br>------------------下面是获取列表-------------------------------
 $list_result=$DomainShortUrl->list();
 print_r(json_decode($list_result,true));
 
+//超高频率检测是否被封,api调用不受到任何时间限制
+echo "<br>------------------超高频率检测是否被封,api调用不受到任何时间限制---------------------------------<br>\n";
+$list_result=$DomainShortUrl->HighFrequencyCheck('http://www.baidu.com');
+print_r(json_decode($list_result,true));
+
 
